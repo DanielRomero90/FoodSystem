@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="../assets/img/favicon/favicon.ico"
+      href="../assets/img/favicon/circle-user-regular.svg"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,54 +16,51 @@
     <title>Usuarios</title>
   </head>
   <body>
-    <main>
+    <main class="main-pages">
       <section class="imagen-fondo">
-        <img class="logo" src="../assets/img/images/logo-food-system.jpg" alt="imagen-logo">
-      </section>
-      <section class="container-formulario">
-        <form>
-          <h2 class="titulo-formulario">USUARIOS </h2>
-          <i class="fa-regular fa-circle-user fa-2xl"></i>
-          
-          <section class="container-inputForm">
-            <input
-              class="input-id"
-              type="text"
-              id="id-user"
-              name="id-user"
-              placeholder="ID USUARIO"
-              readonly
-            />
-            <input
-              type="text"
-              id="user"
-              name="user"
-              placeholder="USUARIO"
-              required
-            />
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="CONTRASEÑA"
-              required
-            />
-            <label for="puesto">PUESTO:</label>
-            <select name="puesto" id="puesto">
-              <option value="cajero">CAJERO</option>
-              <option value="administracion">ADMINISTRACION</option>
-            </select>
-          </section>
-          <section class="container-buttonAvance">
-            <button><i class="fa-solid fa-circle-chevron-left fa-lg"></i> ANTERIOR</button>
-            <button>SIGUIENTE <i class="fa-solid fa-circle-chevron-right fa-lg"></i></button>
-          </section>
-          <section class="container-buttonModificar">
-            <button><i class="fa-solid fa-circle-plus fa-lg"></i> AGREGAR</button>
-            <button><i class="fa-solid fa-pen fa-lg"></i> MODIFICAR</button>
-            <button>ELIMINAR <i class="fa-solid fa-circle-xmark fa-lg"></i></button>
-          </section>
-        </form>
+          <form class="form-pages">
+            <h2 class="titulo-formulario">USUARIOS </h2>
+            <i class="fa-regular fa-circle-user fa-2xl"></i>
+            <section class="container-inputForm">
+              <input
+                class="input-id"
+                type="text"
+                id="id-user"
+                name="id-user"
+                placeholder="ID USUARIO"
+                readonly
+              />
+              <input
+                type="text"
+                id="user"
+                name="user"
+                placeholder="USUARIO"
+                required
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="CONTRASEÑA"
+                required
+              />
+              <label for="puesto">PUESTO:</label>
+              <select name="puesto" id="puesto">
+                <option value="cajero">CAJERO</option>
+                <option value="administracion">ADMINISTRACION</option>
+              </select>
+            </section>
+            <section class="container-buttonAvance">
+              <button><i class="fa-solid fa-circle-chevron-left fa-lg"></i> ANTERIOR</button>
+              <button>SIGUIENTE <i class="fa-solid fa-circle-chevron-right fa-lg"></i></button>
+            </section>
+            <section class="container-buttonModificar">
+              <button><i class="fa-solid fa-circle-plus fa-lg"></i> AGREGAR</button>
+              <button><i class="fa-solid fa-pen fa-lg"></i> MODIFICAR</button>
+              <button>ELIMINAR <i class="fa-solid fa-circle-xmark fa-lg"></i></button>
+            </section>
+          </form>
+        <img class="logo" src="../assets/img/images/foodsystem_logo.svg" alt="imagen-logo">
       </section>
     </main>
   </body>

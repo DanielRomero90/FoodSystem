@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="shortcut icon"
-      href="../assets/img/favicon/favicon.ico"
+      href="../assets/img/favicon/cubes-stacked-solid.svg"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,29 +16,27 @@
     <title>Productos para la venta</title>
 </head>
 <body>
-  <main>
+  <main class="main-pages">
     <section class="imagen-fondo">
-      <img class="logo" src="../assets/img/images/logo-food-system.jpg" alt="imagen-logo">
-    </section>
-    <section class="container-formulario">
-      <form>
-        <h2 class="titulo-formulario">PRODUCTOS PARA LA VENTA</h2>
-        <i class="fa-solid fa-cubes-stacked fa-2xl"></i>
-        <section class="container-inputForm">
-            <input class="input-id" type="text" id="cod-producto" name="cod-producto" placeholder="COD. PRODUCTO" readonly>
-            <input type="text" id="descripcion" name="descripcion" placeholder="DESCRIPCION" required>
-            <input type="text" id="precio-venta" name="precio-venta" placeholder="PRECIO DE VENTA" required>
-        </section>
-        <section class="container-buttonAvance">
-          <button><i class="fa-solid fa-circle-chevron-left fa-lg"></i> ANTERIOR</button>
-          <button>SIGUIENTE <i class="fa-solid fa-circle-chevron-right fa-lg"></i></button>
-        </section>
-        <section class="container-buttonModificar">
-          <button><i class="fa-solid fa-circle-plus fa-lg"></i> AGREGAR</button>
-          <button><i class="fa-solid fa-pen fa-lg"></i> MODIFICAR</button>
-          <button>ELIMINAR <i class="fa-solid fa-circle-xmark fa-lg"></i></button>
-        </section>
-      </form>
+        <form class="form-pages">
+          <h2 class="titulo-formulario">PRODUCTOS PARA LA VENTA</h2>
+          <i class="fa-solid fa-cubes-stacked fa-2xl"></i>
+          <section class="container-inputForm">
+              <input class="input-id" type="text" id="cod-producto" name="cod-producto" placeholder="COD. PRODUCTO" readonly>
+              <input type="text" id="descripcion" name="descripcion" placeholder="DESCRIPCION" required>
+              <input type="text" id="precio-venta" name="precio-venta" placeholder="PRECIO DE VENTA" required>
+          </section>
+          <section class="container-buttonAvance">
+            <button><i class="fa-solid fa-circle-chevron-left fa-lg"></i> ANTERIOR</button>
+            <button>SIGUIENTE <i class="fa-solid fa-circle-chevron-right fa-lg"></i></button>
+          </section>
+          <section class="container-buttonModificar">
+            <button><i class="fa-solid fa-circle-plus fa-lg"></i> AGREGAR</button>
+            <button><i class="fa-solid fa-pen fa-lg"></i> MODIFICAR</button>
+            <button>ELIMINAR <i class="fa-solid fa-circle-xmark fa-lg"></i></button>
+          </section>
+        </form>
+      <img class="logo" src="../assets/img/images/foodsystem_logo.svg" alt="imagen-logo">
     </section>
   </main>
 </body>
