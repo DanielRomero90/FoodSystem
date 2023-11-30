@@ -1,17 +1,17 @@
-* {
+* {      /*estilo para todas las paginas */
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
-::-webkit-scrollbar {
-  display:none;
-}
-/*----------------------------INDEX---------------------------------*/
-.main-index {
-  display: flex;
+
+
+
+
+body{     /* estilo para body de todas las paginas */
+  height: 100%;
 }
 
-.imagen-mainIndex{
+/* imagen aplicada en todas las paginas en el body */
+.imagen-fondo{
   background-image: url(../img/images/imagen-fondo2.jpg);
   background-repeat: no-repeat;
   background-position:right;
@@ -20,53 +20,53 @@
   width: 100vw;
 }
 
-.logo-index {
-  height: 5rem;
-  width: 11rem;
-  box-shadow: 1px 0px 10px 5px #05445E;
-  margin-right: 8rem;
-  float: right;
-}
+/*----------------------------INDEX---------------------------------*/
 
-.section-formIndex {
+.main-index {   /* estilo para index */
   display: flex;
-  justify-content: center;
   align-items: center;
-  
-  
+  justify-content:space-evenly;  /* distribuye elemntos con igual espaciado*/
+  width: 100vw;
+  height: 100vh;
 }
 
-.form-index {
-  background-color: #75E6DA;
+
+.logo-index {   /*  estilo logo para index */
+  width: 22rem;
+  padding: 1rem;
+}
+
+
+.form-index {     /* estilo formulario login index */
+  background-color: #75e6db83;
   border-radius: 3%;
-  padding:0 2rem;
-  margin: 5rem 40rem 0 0;
+  padding:2rem;
   box-shadow: 1px 0px 10px 5px #05445E;
   display:flex;
   flex-direction: column;
 }
 
-.bienvenido-formIndex {
+.bienvenido-formIndex {   /* estilo para etiqueta h2 formulario login */
   margin: 2rem 0 1.5rem 0;
   text-align: center;
   color: #05445E;
 }
 
-.fa-solid.fa-user.fa-2xl{
+
+.fa-solid.fa-user.fa-2xl{  /*estilo para fontawesome*/
   text-align: center;
   margin-bottom: 1.5rem;
   color: #05445E;
 }
 
-.input-formIndex {
+.input-formIndex {   /*estilo para input formulario index*/
   margin: 1rem;
   height: 1.5rem;
   padding-right: 3rem;
 }
 
-.button-formIndex {
+.button-formIndex {   /*estilo para bonton inicio sesion*/
   padding: 0.5em 1em;
-  border: none;
   background: #05445E;
   cursor: pointer;
   margin: 1rem;
@@ -76,11 +76,11 @@
   margin-bottom: 4rem;
 }
 
-.button-formIndex:hover {
+.button-formIndex:hover {  /*estilo hover para boton inicio sesion*/
   background: #189AB4;
 }
 
-a {
+a{   /*estilo para enlace boton inicio sesion*/
   text-decoration: none;
   color: #ffffff;
 }
@@ -89,78 +89,62 @@ a {
 /*-------------------------------------INICIO ADMIN-----------------------------------*/
 /*-------------------------------------NAVBAR ADMIN-----------------------------------*/
 
-ul {
-  list-style:none;
+nav ul {   /*estilos para lista ul de nav*/
+  list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow:hidden;
   background-color: #05445E;
 }
 
-li {
-  float: left;
+li {  /*estilos para li de nav*/
+  float:left;  /*se posicionan los li a la izq uno al lado de otro*/
 }
 
-li a {
+ul li a { /*estilos para enlaces de nav*/
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 1rem;
 }
 
-li a:hover {
+li a:hover { /*estilo para enlaces nav*/
   background: #189AB4;
 }
 
-.boton-perfil {
+.boton-perfil {  /*estilo boton de perfil en nav*/
   float:right;
   width: 5rem;
 }
-
 
 /*----------------------------------FIN NAVBAR ADMIN-----------------------------------------*/
 
 /*----------------------------------INICIO MAIN ADMIN----------------------------------------*/
 .main-admin{
-  height: 90vh;
-}
-
-.imagen-fondo {
-  background-image: url("../img/images/imagen-fondo2.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  height: 100vh;
-  width: 100%;
-}
-
-.logo-admin{
-  height: 5rem;
-  width: 11rem;
-  box-shadow: 1px 0px 10px 5px #05445E;
-  margin-left: 80%;
-  margin-top: 30%;
+  margin: 10rem 0 0 13.5rem;
 }
 
 
 /*------------------------------------FIN MAIN ADMIN--------------------------------------------*/
 /*---------------------------------------FIN ADMIN----------------------------------------------*/
 
-/*--------------------------------------INICIO USUARIOS-----------------------------------------*/
-
-.logo{
+/*----------------------------- INICIO ESTILOS COMPARTIDOS POR PAGES-----------------------------------------*/
+.main-pages{  /*posicionamiento de elementos en pages*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{      /*logo para todas las pages*/
   height: 5rem;
   width: 11rem;
-  box-shadow: 1px 0px 10px 5px #05445E;
-  margin-left: 80%;
-}
-.main-pages{
-  display: flex;
+  padding: 0.3rem;
+  margin: 1rem 65rem 0 0;
 }
 
-.form-pages {
-  margin: 3rem 20rem 0 20rem;
+.form-pages { /*estilo formulario para todas las pages*/
+  margin-top: 2rem;
+  width:40%;
   border-radius: 3%;
   background-color:  #75e6db83;
   box-shadow: 1px 0px 10px 5px #05445E;
@@ -168,67 +152,78 @@ li a:hover {
   flex-direction: column;
 }
 
-.titulo-formulario {
-  text-align: center;
-  margin-top: 1rem;
-  color: #05445E;
-}
-.fa-regular.fa-circle-user.fa-2xl{
-  text-align: center;
-  margin-top: 1rem;
-  color: #05445E;
-}
 
-.fa-solid.fa-cubes-stacked.fa-2xl{
+.titulo-formulario {  /*estilo titulo form para todas las pages*/
   text-align: center;
   margin-top: 1rem;
   color: #05445E;
 }
 
-.fa-solid.fa-truck-field-un.fa-2xl{
-  text-align: center; 
-  margin-top: 1rem;
-  color: #05445E;
-}
-
-.fa-solid.fa-chart-line.fa-2xl{
-  text-align: center;
-  margin-top: 1rem;
-  color: #05445E;
-}
-
-.container-inputForm {
+.container-inputForm { /*estilo para inputs forms de todas las pages*/
   display: flex;
   flex-direction: column;
   margin: 2rem 2rem 0 2rem;
 }
 
-input{
+.fa-regular.fa-circle-user.fa-2xl{  /*estilo fontawesome page edit-user*/
+  text-align: center;
   margin-top: 1rem;
-  height: 1.5rem;
+  color: #05445E;
 }
 
-.container-buttonAvance {
+.fa-solid.fa-cubes-stacked.fa-2xl{  /*estilo fontawesome page edit-product*/
+  text-align: center;
+  margin-top: 1rem;
+  color: #05445E;
+}
+
+.fa-solid.fa-truck-field-un.fa-2xl{ /*estilo fontawesome page edit-supplier*/
+  text-align: center;
+  margin-top: 1rem;
+  color: #05445E;
+}
+
+.fa-regular.fa-clipboard.fa-2xl{ /*estilo fontawesome page stock*/
+  text-align: center;
+  margin-top: 1rem;
+  color: #05445E;
+}
+
+
+input { /*estilo para todos los inputs pages*/
+  margin-top: 0.5rem;
+  height: 1rem;
+}
+
+
+.num-factura{ 
+  margin-left: 2rem;
+}
+.selector-proveedor{ 
+  margin-top: 0.5rem;
+}
+
+.container-buttonAvance { /*estilos para botones de avance form todas las pages*/
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
-.container-buttonModificar {
+.container-buttonModificar { /*estilos para botones modificadores form todas las pages*/
   display: flex;
   justify-content: center;
   margin: 1rem 0 2rem 0;
 }
 
- select {
+ select{
   height: 1.5rem;
 }
 
-.input-id {
+.input-id {   /* estilo input readonly*/
   background-color: #91a6b4;
 }
 
-button {
+button { /*estilos para botones form todas las pages*/
   border: none;
   background: #05445E;
   color: #ffffff;
@@ -238,69 +233,97 @@ button {
   margin: 0 1rem 0 1rem;
 }
 
-button:hover {
+button:hover {  /*estilo hover para botones pages*/
   background:  #189AB4;
 }
 
- .main-reports{
+/*----------------------------- FIN ESTILOS COMPARTIDOS POR PAGES-----------------------------------------*/
+
+/*-------------------------------------------INICIO STOCK------------------------------------------------*/
+
+.container-generalTable{ /*estilos para contenedor de la tabla*/
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} 
-.container-generalTable{
-  display: flex;
-  flex-direction: column;
-  border: solid;
-  width: 90vw;
-  margin: 3rem 4rem 0.5rem 4rem;
-  border: solid;
+  width: 70%;
+  margin-top: 3rem;
   background-color:  #75e6db83;
   box-shadow: 1px 0px 10px 5px #05445E;
   border-radius: 3%;
 }
 
-.container-table{
-  width: 90%;
+
+.container-table{ /*estilo para tabla de existencias*/
   margin: 3rem;
   box-shadow: 1px 0px 10px 5px #131111af;
 }
 
-.fechas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 2rem;
-  margin: 2rem 0 0 3rem;
-}
-
-.input-fecha{
-  margin: 0;
-  padding: 0.2rem;
-}
-
-.row{
+.row{        /*estilo para filas de tabla*/
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.header-table{
+.header-table{  /*estilo para cabecera de tabla*/
   background-color: #75dee6;
   border: solid 1px;
 }
 
-.header-table .row div{
+.header-table .row div{ /*estilo para contenido de cabecera tabla*/
   font-weight: 600;
   border: solid 1px;
+  padding: 0.3rem;
 }
 
-.body-table .row div{
+.body-table .row div{  /*estilo para contenido de cuerpo de tabla*/
   border: solid 1px;
   background-color: #ffffff;
+  padding: 0.3rem;
+}
+/*-------------------------------------------FIN STOCK------------------------------------------------*/
+
+/*-------------------------------------------INICIO MODAL------------------------------------------------*/
+#modal{ /*estilo para ventana modal*/
+  top: 25%;
+  left: 25%; 
+  width: 50%;
 }
 
-.totales .row div{
-	background-color: #75dee6;
-  font-weight: 600;
+.containerModal{ /*estilos posicionamiento elementos de ventana modal*/
+  display: flex;
+  flex-direction: column;
+}
+
+.container-tableModal{ /*estilos para tabla modal*/
+  margin: 2rem;
+  box-shadow: 1px 0px 10px 5px #131111af;
+}
+
+.rowModal{  /*estilo filas tabla modal*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.header-tableModal{  /*estilo cabecera tabla modal*/
+  background-color: #75dee6;
   border: solid 1px;
 }
+
+.header-tableModal .rowModal div{ /*estilo para contenido de cabecera tabla modal*/
+  font-weight: 600;
+  border: solid 1px;
+  padding: 0.3rem;
+}
+
+.body-tableModal .rowModal div{ /*estilo para contenido de cuerpo tabla modal*/
+  border: solid 1px;
+  background-color: #ffffff;
+  padding: 0.3rem;
+}
+
+.buttonModal{ /*estilo para boton modal de cierre*/
+  border: none;
+  background: #05445E;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  margin: 0 2rem;
+} 

@@ -1,43 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="shortcut icon"
-      href="../assets/img/favicon/cubes-stacked-solid.svg"
-      type="image/x-icon"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Playpen+Sans:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6f596a8b33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
-    <title>Productos para la venta</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../assets/img/favicon/cubes-stacked.ico" type="image/x-icon">
+    <title>Ingreso existencia</title>
 </head>
-<body>
+<body class="imagen-fondo">
   <main class="main-pages">
-    <section class="imagen-fondo">
         <form class="form-pages">
-          <h2 class="titulo-formulario">PRODUCTOS PARA LA VENTA</h2>
+          <h2 class="titulo-formulario">INGRESO EXISTENCIA</h2>
           <i class="fa-solid fa-cubes-stacked fa-2xl"></i>
+          
           <section class="container-inputForm">
+            <div>
+              <label for="">FECHA: </label>
+              <input type="date">
+              <input class="num-factura" type="text" placeholder="N° DE FACTURA">
+            </div>
+              <select class="selector-proveedor" name="proveedor" id="proveedor">
+                <option value="" disabled selected>SELECCIONE UN PROVEEDOR</option>
+                <option value="">Coca Cola</option>
+                <option value="">Quilmes</option>
+                <option value="">La Serenisima</option>
+              </select>
               <input class="input-id" type="text" id="cod-producto" name="cod-producto" placeholder="COD. PRODUCTO" readonly>
-              <input type="text" id="descripcion" name="descripcion" placeholder="DESCRIPCION" required>
-              <input type="text" id="precio-venta" name="precio-venta" placeholder="PRECIO DE VENTA" required>
+              <input type="text" id="descripcion" name="descripcion" placeholder="DESCRIPCION">
+              <input type="text" id="precio-venta" name="precio-venta" placeholder="PRECIO DE COMPRA">
+              <input type="text" id="cantidad" name="cantidad" placeholder="CANTIDAD/KG/LTS">
           </section>
+          
           <section class="container-buttonAvance">
             <button><i class="fa-solid fa-circle-chevron-left fa-lg"></i> ANTERIOR</button>
+            <button type="button" onclick="window.modal.showModal();">BUSCAR <i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
             <button>SIGUIENTE <i class="fa-solid fa-circle-chevron-right fa-lg"></i></button>
           </section>
+          
           <section class="container-buttonModificar">
             <button><i class="fa-solid fa-circle-plus fa-lg"></i> AGREGAR</button>
             <button><i class="fa-solid fa-pen fa-lg"></i> MODIFICAR</button>
             <button>ELIMINAR <i class="fa-solid fa-circle-xmark fa-lg"></i></button>
           </section>
         </form>
-      <img class="logo" src="../assets/img/images/foodsystem_logo.svg" alt="imagen-logo">
-    </section>
+        <img class="logo" src="../assets/img/images/foodsystem_logo.svg" alt="imagen-logo">
+        
+        <dialog id="modal">
+          <section class="containerModal">
+            <div class="container-tableModal">
+              <div class="header-tableModal">
+                <div class="rowModal">
+                  <div>COD. PRODUCTO</div>
+                  <div>PRODUCTO</div>
+                </div>
+              </div>
+
+              <div class="body-tableModal">
+                <div class="rowModal">
+                  <div>ST0001</div>
+                  <div>Papas</div>
+                </div>
+
+                <div class="rowModal">
+                  <div>ST0002</div>
+              <div>Huevos</div>
+                </div>
+
+                <div class="rowModal">
+                  <div>ST0003</div>
+                  <div>Leche</div>
+                </div>
+              </div>   
+            </div>
+
+            <button class="buttonModal" onclick="window.modal.close();">Cerrar</button>
+          </section>
+        </dialog>  
+  
   </main>
 </body>
 </html>

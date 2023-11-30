@@ -1,58 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon/favicon.ico"
-      type="image/x-icon"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Playpen+Sans:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6f596a8b33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/img/favicon/foodsystem_logo.ico" type="image/x-icon">
     <title>Iniciar Sesion</title>
   </head>
-  <body>
+  <body class="imagen-fondo">
     <main class="main-index">
-      <section class="imagen-mainIndex">
-        <section class="section-formIndex">
+          <img class="logo-index" src="./assets/img/images/foodsystem_logo.svg" alt="logo-food-system"/>
           <form class="form-index">
             <h2 class="bienvenido-formIndex">BIENVENIDO</h2>
             <i class="fa-solid fa-user fa-2xl"></i>
-            <input
-              class="input-formIndex"
-              type="text"
-              name="usuario"
-              placeholder="Usuario"
-              required
-            />
-            <input
-              class="input-formIndex"
-              type="password"
-              placeholder="Contraseña"
-              name="password"
-              required
-            />
-            <button
-              class="button-formIndex"
-              type="submit"
-              title="Ingresar"
-              name="Ingresar"
-            >
+            <input class="input-formIndex" type="text" placeholder="Usuario" required/>
+            <input class="input-formIndex" type="password" placeholder="Contraseña" required/>
+            <button class="button-formIndex"  >
               <a href="./pages/admin.html">INICIAR SESION</a>
             </button>
           </form>
-        </section>
-        <img
-          class="logo-index"
-          src="./assets/img/images/foodsystem_logo.svg"
-          alt="logo-food-system"
-        />
-      </section>
     </main>
   </body>
 </html>
