@@ -7,11 +7,20 @@
 
 
 body{     /* estilo para body de todas las paginas */
-  height: 100%;
+  height: auto;
+  
 }
 
 /* imagen aplicada en todas las paginas en el body */
 .imagen-fondo{
+  background-image: url(../img/images/imagen-fondo2.jpg);
+  background-repeat: no-repeat;
+  background-position:right;
+  background-size:contain;
+  width: 100vw;
+}
+
+.imagen-fondoAdmin{
   background-image: url(../img/images/imagen-fondo2.jpg);
   background-repeat: no-repeat;
   background-position:right;
@@ -280,50 +289,3 @@ button:hover {  /*estilo hover para botones pages*/
 }
 /*-------------------------------------------FIN STOCK------------------------------------------------*/
 
-/*-------------------------------------------INICIO MODAL------------------------------------------------*/
-#modal{ /*estilo para ventana modal*/
-  top: 25%;
-  left: 25%; 
-  width: 50%;
-}
-
-.containerModal{ /*estilos posicionamiento elementos de ventana modal*/
-  display: flex;
-  flex-direction: column;
-}
-
-.container-tableModal{ /*estilos para tabla modal*/
-  margin: 2rem;
-  box-shadow: 1px 0px 10px 5px #131111af;
-}
-
-.rowModal{  /*estilo filas tabla modal*/
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.header-tableModal{  /*estilo cabecera tabla modal*/
-  background-color: #75dee6;
-  border: solid 1px;
-}
-
-.header-tableModal .rowModal div{ /*estilo para contenido de cabecera tabla modal*/
-  font-weight: 600;
-  border: solid 1px;
-  padding: 0.3rem;
-}
-
-.body-tableModal .rowModal div{ /*estilo para contenido de cuerpo tabla modal*/
-  border: solid 1px;
-  background-color: #ffffff;
-  padding: 0.3rem;
-}
-
-.buttonModal{ /*estilo para boton modal de cierre*/
-  border: none;
-  background: #05445E;
-  color: #ffffff;
-  cursor: pointer;
-  border-radius: 0.2rem;
-  padding: 0.5rem;
-  margin: 0 2rem;
-} 

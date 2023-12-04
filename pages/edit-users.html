@@ -12,6 +12,15 @@
     <title>Usuarios</title>
   </head>
   <body class="imagen-fondo">
+    <nav>
+      <ul>
+          <li><a target="_parent" href="edit-users.html"><i class="fa-regular fa-user"></i> USUARIOS</a></li>
+          <li><a target="_parent" href="edit-suppliers.html"><i class="fa-solid fa-truck-field-un"></i> PROVEEDORES</a></li>
+          <li><a target="_parent" href="edit-products.html"><i class="fa-solid fa-cubes-stacked"></i> PRODUCTOS</a></li>
+          <li><a target="_parent" href="stock.html"><i class="fa-regular fa-clipboard"></i> EXISTENCIAS</a></li>
+          <li class="boton-perfil"><a class="activo" href="#"><i class="fa-regular fa-circle-user fa-xl "></i> <i class="fa-solid fa-caret-down fa-2xs"></i></a></li>
+      </ul>
+    </nav>
     <main class="main-pages">
           <form class="form-pages">
             <h2 class="titulo-formulario">USUARIOS </h2>
@@ -30,7 +39,6 @@
 
             <section class="container-buttonAvance">
               <button><i class="fa-solid fa-circle-chevron-left fa-lg"></i> ANTERIOR</button>
-              <button type="button" onclick="window.modal.showModal();">BUSCAR <i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
               <button>SIGUIENTE <i class="fa-solid fa-circle-chevron-right fa-lg"></i></button>
             </section>
 
@@ -41,38 +49,6 @@
             </section>
           </form>
           <img class="logo" src="../assets/img/images/foodsystem_logo.svg" alt="imagen-logo">
-          
-          <dialog id="modal">
-              <section class="containerModal">
-                <div class="container-tableModal">
-                  <div class="header-tableModal">
-                    <div class="rowModal">
-                      <div>ID USUARIO</div>
-                      <div>USUARIO</div>
-                    </div>
-                  </div>
-
-                  <div class="body-tableModal">
-                    <div class="rowModal">
-                      <div>USR0001</div>
-                      <div>Daniel Romero</div>
-                    </div>
-
-                    <div class="rowModal">
-                      <div>USR0002</div>
-                      <div>Juan Perez</div>
-                    </div>
-                    
-                    <div class="rowModal">
-                      <div>USR0003</div>
-                      <div>Roberto Gomez</div>
-                    </div>
-                  </div>   
-                </div>
-                <button class="buttonModal" onclick="window.modal.close();">Cerrar</button>
-              </section>
-          </dialog>  
-
     </main>
   </body>
 </html>

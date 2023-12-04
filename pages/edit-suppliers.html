@@ -12,6 +12,15 @@
   <title>Proveedores</title>
 </head>
 <body class="imagen-fondo">
+  <nav>
+    <ul>
+        <li><a target="_parent" href="edit-users.html"><i class="fa-regular fa-user"></i> USUARIOS</a></li>
+        <li><a target="_parent" href="edit-suppliers.html"><i class="fa-solid fa-truck-field-un"></i> PROVEEDORES</a></li>
+        <li><a target="_parent" href="edit-products.html"><i class="fa-solid fa-cubes-stacked"></i> PRODUCTOS</a></li>
+        <li><a target="_parent" href="stock.html"><i class="fa-regular fa-clipboard"></i> EXISTENCIAS</a></li>
+        <li class="boton-perfil"><a class="activo" href="#"><i class="fa-regular fa-circle-user fa-xl "></i> <i class="fa-solid fa-caret-down fa-2xs"></i></a></li>
+    </ul>
+  </nav>
     <main class="main-pages">
             <form class="form-pages">
                 <h2 class="titulo-formulario">PROVEEDORES</h2>
@@ -24,7 +33,6 @@
                 </section>
                 <section class="container-buttonAvance">
                   <button><i class="fa-solid fa-circle-chevron-left fa-lg"></i> ANTERIOR</button>
-                  <button type="button" onclick="window.modal.showModal();">BUSCAR <i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
                   <button>SIGUIENTE <i class="fa-solid fa-circle-chevron-right fa-lg"></i></button>
                 </section>
                 <section class="container-buttonModificar">
@@ -33,37 +41,7 @@
                   <button>ELIMINAR <i class="fa-solid fa-circle-xmark fa-lg"></i></button>
                 </section>
             </form>
-            <img class="logo" src="../assets/img/images/foodsystem_logo.svg" alt="imagen-logo">
-            <dialog id="modal">
-              <section class="containerModal">
-                <div class="container-tableModal">
-                  <div class="header-tableModal">
-                    <div class="rowModal">
-                      <div>RAZON SOCIAL</div>
-                      <div>TELEFONO</div>
-                    </div>
-                  </div>
-
-                  <div class="body-tableModal">
-                    <div class="rowModal">
-                      <div>Coca Cola</div>
-                      <div>8888 - 333 - 555</div>
-                    </div>
-
-                    <div class="rowModal">
-                      <div>Quilmes</div>
-                      <div>0800 - 555 - 1111</div>
-                    </div>
-
-                    <div class="rowModal">
-                      <div>Sancor</div>
-                      <div>0800 - 333 - 222</div>
-                    </div>
-                  </div>   
-                </div>
-                <button class="buttonModal" onclick="window.modal.close();">Cerrar</button>
-              </section>
-          </dialog>    
+            <img class="logo" src="../assets/img/images/foodsystem_logo.svg" alt="imagen-logo">  
     </main> 
 </body>
 </html>
